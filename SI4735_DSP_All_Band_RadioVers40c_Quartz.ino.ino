@@ -1000,7 +1000,7 @@ void setup() {
 
   int16_t si4735Addr = si4735.getDeviceI2CAddress(RESET_PIN);
 
-   WiFi.begin("yo2ldk_ext", "222429yo2ldk");
+   WiFi.begin("your SSID", "your Password");                                     //  !!  complete this with your details for WiFi connection  !!
     setServer(ntp_pool);
     setInterval  (3000);      
     
