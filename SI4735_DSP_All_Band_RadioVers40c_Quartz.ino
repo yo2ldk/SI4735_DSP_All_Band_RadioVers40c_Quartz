@@ -84,8 +84,8 @@
 #define ESP32_I2C_SDA    21  // I2C bus pin on ESP32
 #define ESP32_I2C_SCL    22  // I2C bus pin on ESP32
 #define RESET_PIN        12
-#define ENCODER_PIN_A    26  
-#define ENCODER_PIN_B    13
+#define ENCODER_PIN_A    17  
+#define ENCODER_PIN_B    16
 #define ENCODER_SWITCH   33
 #define BAT_INFO         25
 #define BEEPER           32
