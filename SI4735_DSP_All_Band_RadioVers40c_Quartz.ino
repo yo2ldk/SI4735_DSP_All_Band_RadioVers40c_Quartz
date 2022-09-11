@@ -1792,8 +1792,7 @@ void saver() {
           saverY = random(270) + 5;
         }
         FreqDraw(freq, 0);
-        Dtm; 
-        if (batShow) {
+            if (batShow) {
           float vsupply = 3.324 * analogRead(BAT_INFO) / 2047; 
           int bat = map(int(vsupply * 100), 270, 405, 0, 100);
           if (bat < 0) bat = 0;
@@ -3499,6 +3498,8 @@ if (( currentMode == FM ) or ( currentMode == AM ) or ( currentMode == USB )or (
 
 void NTS()
 {
+  if (( currentMode == FM ) or ( currentMode == AM ) or ( currentMode == USB )or ( currentMode == LSB )and ((FirstLayer) or (ThirdLayer) or (SecondLayer))) { 
+  if ((FirstLayer or ThirdLayer) and !PRESbut) {  
   int sync_result, sync_age;
   #define RGB(r, g, b) ((( r & 0xF8 ) << 8)|(( g & 0xFC ) << 3 )|( b >> 3 ))
   #define GREEN       RGB(  0, 254,   0)
@@ -3522,7 +3523,7 @@ void NTS()
   tft.setCursor(415, 173);                            
   tft.setTextColor(sync_result, BLUE);         
   tft.print( "NTP Sync" );
-  tft.fillRoundRect(432, 198, 10, 10, 3, sync_result);  
+  tft.fillRoundRect(432, 198, 10, 10, 3, sync_result);}}  
 }                                   
 //=======================================================================================
 void showRSSI() {
