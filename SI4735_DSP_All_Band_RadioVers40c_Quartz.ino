@@ -1044,14 +1044,14 @@ btn.onPress(pressHandler)
   spr.pushSprite(27, 120);
   spr.deleteSprite();
 
-  tft.println(" DSP ALL Band AL Mode Radio SI4735 ");
+  tft.println(" DSP ALL Band AL Mode Radio SI4735 witn duaal NTP Time clock");
   delay(400);
   tft.setTextColor(TFT_WHITE, TFT_NAVY);
   tft.setCursor(15, 80);
-  tft.print("Binns Bernard Version V4.01b - 4 inch");
+  tft.print("Binns Bernard Version V4.01c - 4 inch");
   delay(400);
   tft.setCursor(18, 130);
-  tft.print("modified by yo2ldk Op. Alex 4-320x480 ");
+  tft.print("modified by yo2ldk Op. Alex to 4 inch LCD ");
   delay(400);
   tft.setTextColor(TFT_WHITE, TFT_NAVY);
   tft.setCursor(145, 160);
