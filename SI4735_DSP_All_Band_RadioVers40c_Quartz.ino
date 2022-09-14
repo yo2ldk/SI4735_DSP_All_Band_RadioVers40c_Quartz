@@ -1050,11 +1050,13 @@ btn.onPress(pressHandler)
   tft.setCursor(15, 80);
   tft.print("Binns Bernard Version V4.01c - 4 inch");
   delay(400);
-  tft.setCursor(18, 130);
-  tft.print("modified by yo2ldk Op. Alex to 4 inch LCD ");
+  tft.setCursor(120, 130);
+  tft.print("modified by yo2ldk");
+  tft.setCursor(100, 170);
+  tft.print("Op. Alex to 4 inch LCD ");
   delay(400);
   tft.setTextColor(TFT_WHITE, TFT_NAVY);
-  tft.setCursor(145, 160);
+  tft.setCursor(150, 210);
   tft.print(" 29-07-2022 ");
   delay(600);
   tft.setTextSize(2);
@@ -3472,27 +3474,27 @@ if (( currentMode == FM ) or ( currentMode == AM ) or ( currentMode == USB )or (
     tft.setTextPadding(1);
     tft.setTextDatum(TL_DATUM);
     tft.setTextColor(TFT_SKYBLUE, TFT_NAVY);
-    tft.setCursor(155, 195);
+    tft.setCursor(170, 195);
     tft.printf( "%02u:%02u", hour(loc_time), minute(loc_time));
-    tft.setCursor(215, 195);                         
+    tft.setCursor(230, 195);                         
     tft.printf( ":%02u", second(loc_time) );
-    tft.setCursor(251, 195);
+    tft.setCursor(266, 195);
     tft.println(" Local Time" );
     tft.setTextColor(TFT_WHITE, TFT_NAVY);
     tft.setTextPadding(1);
     tft.setTextSize(3);
-    tft.setCursor(5, 165);
+    tft.setCursor(0, 165);
     tft.println(UTC.dateTime("l"));
     tft.setTextSize(2);  
     tft.setTextPadding(3);                             
-    tft.setCursor(5, 195);       
+    tft.setCursor(0, 195);       
     tft.setTextColor(TFT_WHITE, TFT_NAVY); 
     tft.printf( "%02u-%02u-%04u", day(loc_time), month(loc_time), year(loc_time) );   
     tft.setTextSize(2);
     tft.setTextColor(TFT_MAGENTA, TFT_NAVY);
-    tft.setCursor(155, 170);
+    tft.setCursor(170, 170);
     tft.println(UTC.dateTime("H:i:s T"));
-    tft.setCursor(335, 170);
+    tft.setCursor(350, 170);
     tft.println("Time" );}} 
 }       
 
